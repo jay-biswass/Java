@@ -1,6 +1,6 @@
 package BasicsOfJava;
 
-public class Arithmetic {
+public class ArithmeticOperations {
     public static void main(String[] args) {
         int x=5;
         int y=2;
