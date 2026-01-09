@@ -5,5 +5,6 @@ public class Variablesint {
         int x;
         x=500;
         System.out.println(x);
+
     }
 }
