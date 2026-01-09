@@ -8,6 +8,6 @@ public class MultipleVariables {
         System.out.println("The value of x is "+x);
         System.out.println("The value of y is "+y);
         System.out.println("The value of x is "+x+y+z);
-
+        System.out.println(x+y+""+z);
     }
 }
