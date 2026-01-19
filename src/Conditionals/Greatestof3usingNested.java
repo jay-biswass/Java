@@ -19,13 +19,11 @@ public class Greatestof3usingNested {
         }
         else {
             if (b>c){
-            System.out.println(b+" is greatest");
+                System.out.println(b+" is greatest");
             }
             else{
                 System.out.println(c+" is greatest");
             }
-
         }
-
     }
 }
