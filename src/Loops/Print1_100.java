@@ -2,13 +2,13 @@ package Loops;
 
 import java.util.Scanner;
 
-public class LoopsBasics {
+public class Print1_100 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter number:");
+        System.out.println("Enter number to print: ");
         int n = sc.nextInt();
         for (int i=1; i<=n; i++){
-            System.out.println("Jay Biswas.");
+            System.out.println(i);
         }
     }
 }
