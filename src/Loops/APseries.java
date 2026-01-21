@@ -7,13 +7,16 @@ public class APseries {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of terms: ");
         int n = sc.nextInt();
-        for (int i=1; i<=2*n-1; i+=2){
+        for (int i=1; i<=2*n-1; i+=2){                      //n th term = a + (n-1) * d
             System.out.print(i+" ");
 
-//            if (i%2==1){
-//                System.out.println(i);
-//            }
-        }
 
+//    Que. 4, 7, 10, 13, 16... (Better Code)
+//            int a = 4, d=3;
+//            for (int j = 1; j <=n; j++){
+//                System.out.println(a);
+//                a += d;
+            }
+        }
     }
-}
+
