@@ -32,7 +32,10 @@ public class PrimeandComposite {
                 break;
             }
         }
-        if (flag == false){
+        if(n==1){
+            System.out.println("Neither prime nor composite");
+        }
+        else if (flag == false){
             System.out.println("Prime number");
         }
         else{
