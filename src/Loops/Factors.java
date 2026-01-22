@@ -10,12 +10,12 @@ public class Factors {
         int n = sc.nextInt();
         int hf=1;
         System.out.print("Factors of "+n+": ");
-        for(int i=1; i<=n; i++){
+        for(int i=n-1; i>=n; i--){
             if(n%i==0){
                 System.out.print(i+" ");
                 hf=i;
+                break;
             }
-
         }
         System.out.println("\nThe highest factor is: "+hf);
     }
