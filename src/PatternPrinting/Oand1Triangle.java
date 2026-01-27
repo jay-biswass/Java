@@ -2,16 +2,21 @@ package PatternPrinting;
 
 import java.util.Scanner;
 
-public class FloydsTriangle {
+public class Oand1Triangle {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter rows: ");
         int m = sc.nextInt();
-        int a = 1;
         for (int i = 1; i <= m; i++) {
             for (int j = 1; j <= i; j++) {
-                System.out.print(a+" ");
-                a++;
+                if(i%2!=0){
+                    if(j%2!=0) System.out.print(1+" ");
+                    else System.out.print(0+" ");
+                }
+                else {
+                    if(j%2==0) System.out.print(1+" ");
+                    else System.out.print(0+" ");
+                }
             }
             System.out.println();
         }
