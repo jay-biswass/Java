@@ -7,24 +7,34 @@ public class ReverseArray {
 
         Scanner sc = new Scanner(System.in);
 
-        // Input array size
         System.out.print("Enter array size: ");
         int n = sc.nextInt();
 
         int[] arr = new int[n];
 
-        // Input array elements
         System.out.println("Enter array elements:");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
 
-        // Print reversed array
-        System.out.println("Reversed array:");
-        for (int i = n - 1; i >= 0; i--) {
-            System.out.print(arr[i] + " ");
-        }
+//        System.out.println("Reversed array:");
+//        for (int i = n - 1; i >= 0; i--) {
+//            System.out.print(arr[i] + " ");
+//        }
+//
+//        sc.close();
 
-        sc.close();
+        int i =0 , j = n-1;
+        while(i<j){
+            int temp= arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+
+        }
+        for (int ele : arr ){
+            System.out.print(ele+" ");
+        }
     }
 }
