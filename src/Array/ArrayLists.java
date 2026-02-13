@@ -1,6 +1,7 @@
 package Array;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayLists {
     public static void main(String[] args) {
@@ -14,6 +15,13 @@ public class ArrayLists {
         System.out.println(arr.get(2));
         arr.set(3,50);
 
+        System.out.println(arr);
+
+        arr.add(55);
+        arr.add(2,99);
+        System.out.println(arr);
+
+        Collections.reverse(arr);
         System.out.println(arr);
     }
 }
