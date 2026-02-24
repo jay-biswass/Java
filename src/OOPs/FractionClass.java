@@ -6,7 +6,6 @@ class Fraction{
         this.num = num;
         this.den = den;
         simpliyfy();
-
     }
     void print(){
         System.out.println(num+"/"+den);
@@ -15,19 +14,16 @@ class Fraction{
         num = num * f.den + den *f.num;
         den = den * f.den;
         simpliyfy();
-
     }
     public void multiply(Fraction f) {
         num *= f.num;
         den *= f.den;
         simpliyfy();
-
     }
     public void divide(Fraction f) {
         num = num * f.den;
         den = den * f.num;
         simpliyfy();
-
     }
     void simpliyfy(){
         boolean isNegative = (num*den < 0) ? true:false;
