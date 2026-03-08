@@ -13,4 +13,3 @@ public class FindDuplicate3 {
         System.out.println("Imposter = "+imposter);
     }
 }
-
