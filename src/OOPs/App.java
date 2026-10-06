@@ -20,13 +20,15 @@ public class App {
 
 //        Parameterized Constructor
 
-        Student A = new Student(1,22,"Jay",6);
-        Student B = new Student(A);
+        Student A = new Student(1,22,"Jay",6, "Tannu", 979887297);
+//        Student B = new Student(A);
 
-//        System.out.println(A.id);
-//        System.out.println(A.name);
-//        System.out.println(A.age);
-//        System.out.println(A.nos);
+        System.out.println(A.id);
+        System.out.println(A.name);
+        System.out.println(A.getAge());
+        System.out.println(A.nos);
+        System.out.println(A.getgfName());
+        System.out.println(A.getPhoneNum());
 //
 //        System.out.println(B.id);
 //        System.out.println(B.name);
@@ -34,12 +36,14 @@ public class App {
 //        System.out.println(B.nos);
 
 
-        Car M = new Car("Maruti", 800,5,"Red");
 
-        System.out.println(M.name);
-        System.out.println(M.cc);
-        System.out.println(M.costInLakh);
-        System.out.println(M.color);
+
+//        Car M = new Car("Maruti", 800,5,"Red");
+//
+//        System.out.println(M.name);
+//        System.out.println(M.cc);
+//        System.out.println(M.costInLakh);
+//        System.out.println(M.color);
 
 
     }
