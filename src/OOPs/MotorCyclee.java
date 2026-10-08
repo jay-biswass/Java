@@ -10,4 +10,8 @@ public class MotorCyclee extends Vehiclee {
         this.suspensionType = suspensionType;
     }
 
+    public void wheelie(){
+        System.out.printf("Wheelie maar rahi %s:%s\n",name,model);
+    }
+
 }

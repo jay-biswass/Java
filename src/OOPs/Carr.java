@@ -14,8 +14,6 @@ public class Carr extends Vehiclee {
     }
 
     public void startAC(){
-        System.out.println("AC started of" + name);
+        System.out.println("AC started of : " + name);
     }
-
-
 }
