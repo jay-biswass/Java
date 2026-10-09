@@ -4,13 +4,20 @@ public class Main {
     static void main() {
 
         Shape s = new Shape();
-        s.draw();
+        doDrawingStuff(s);
+//        s.draw();
 
         Circle c = new Circle();
-        c.draw();
+        doDrawingStuff(c);
+//        c.draw();
 
         Rectangle r = new Rectangle();
-        r.draw();
+        doDrawingStuff(r);
+//        r.draw();
 
+    }
+
+    public static void doDrawingStuff(Shape s) {
+        s.draw();
     }
 }
