@@ -32,6 +32,7 @@ public class Polymorphism {
         return (a+b+c);
     }
 
+
     public static void main(String[] args) {
         Human h = new Human();
         Pikachu p = new Pikachu();
