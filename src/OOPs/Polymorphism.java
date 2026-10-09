@@ -22,6 +22,16 @@ public class Polymorphism {
         }
     }
 
+//    Method Overloading
+
+    static int add(int a,int b){
+        return (a+b);
+    }
+
+    static int add(int a,int b, int c){
+        return (a+b+c);
+    }
+
     public static void main(String[] args) {
         Human h = new Human();
         Pikachu p = new Pikachu();
@@ -32,5 +42,9 @@ public class Polymorphism {
         c.speak();
         d.speak();
         p.speak();
+
+        System.out.println("sum="+add(2,3));
+        System.out.println("sum="+add(2,3,5));
+
     }
 }
