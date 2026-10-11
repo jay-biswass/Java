@@ -5,6 +5,10 @@ abstract class Bird {
 
     abstract void eat();
 
+    public void sleep(){
+        System.out.println("Bird Sleeping...");
+    }
+
 }
 
 class Sparrow extends Bird {
@@ -36,9 +40,11 @@ public class Main {
         Bird b = new Sparrow();
         b.fly();
         b.eat();
+        b.sleep();
 
         b = new Crow();
         b.fly();
         b.eat();
+        b.sleep();
     }
 }
