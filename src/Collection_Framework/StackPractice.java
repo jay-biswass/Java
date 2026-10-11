@@ -1,8 +1,7 @@
 package Collection_Framework;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Stack;
+import java.sql.SQLOutput;
+import java.util.*;
 
 public class StackPractice {
     static void main(String[] args) {
@@ -46,6 +45,16 @@ public class StackPractice {
 
         System.out.println(list2.empty());
 
+        System.out.println("____________________________");
+        Deque<Integer> stack = new ArrayDeque<>();
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        System.out.println(stack);
+        System.out.println("pop: "+stack.pop());
+        System.out.println("peek: "+stack.peek());
+        System.out.println("stack: "+stack);
 
     }
 }
