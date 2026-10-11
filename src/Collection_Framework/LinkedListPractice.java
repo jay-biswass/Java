@@ -40,7 +40,7 @@ public class LinkedListPractice {
         list.remove(3);
         System.out.println(list);
 
-//Adding element at start and end
+//Adding element at start and end [Ye LinkedList Specific methods hain]
         System.out.println("Last Index of 30 {lastIndexOf(30)}: "+list.lastIndexOf(30));
         list.addFirst(100);
         System.out.println("after add first {addFirst(100)}: "+list);
