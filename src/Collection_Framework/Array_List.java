@@ -1,13 +1,15 @@
 package Collection_Framework;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
 
-public class ArrayList {
+public class Array_List {
     public static void main(String[] args) {
 
-        java.util.ArrayList<Integer> list = new java.util.ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
 
         list.add(10);
         list.add(20);
@@ -73,6 +75,34 @@ public class ArrayList {
         System.out.println(list3.contains(100));
         System.out.println(list3.contains(1010));
 
+//        sort
+        ArrayList<Integer> list4 = new ArrayList<>();
+        list4.add(44);
+        list4.add(11);
+        list4.add(22);
+        list4.add(99);
+        list4.add(66);
+        System.out.println("list4: "+list4);
+
+        Collections.sort(list4);
+        System.out.println(list4);
+
+//        sort in descending order
+
+        Collections.sort(list4, Collections.reverseOrder());
+//        Collections.reverse(list4);
+        System.out.println(list4);
+
+
+//        cloning
+        ArrayList<Integer> newList = (ArrayList<Integer>) list4.clone();
+        System.out.println("Cloned newList: "+newList);
+
+        ArrayList<Integer> marks = new ArrayList<>();
+        marks.ensureCapacity(100);
+
+        System.out.println(newList.isEmpty());
+        System.out.println("is marks AL empty?? "+marks.isEmpty());
 
     }
 }
