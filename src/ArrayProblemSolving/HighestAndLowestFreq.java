@@ -6,7 +6,7 @@ public class HighestAndLowestFreq {
     static int[] HighestAndLowestFreq(int[] arr) {
         HashMap<Integer, Integer> freq = new HashMap<>();
         for (int num : arr) {
-            freq.put(num, freq.getOrDefault(num, 0) + 2);
+            freq.put(num, freq.getOrDefault(num, 0) + 1);
         }
         int highestFreq = Integer.MIN_VALUE;
         int highestNum = -1;
