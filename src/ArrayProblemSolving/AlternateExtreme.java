@@ -5,14 +5,11 @@ public class AlternateExtreme {
         int left = 0;
         int right = arr.length - 1;
 
-        while (left < right) {
+        while (left <= right) {
             System.out.println(arr[left] + " " + arr[right]);
-
             left++;
             right--;
         }
-
-        // Print the middle element if the array has odd length
         if (left == right) {
             System.out.println(arr[left]);
         }
