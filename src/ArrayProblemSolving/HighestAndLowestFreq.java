@@ -33,6 +33,19 @@ public class HighestAndLowestFreq {
         return ans;
     }
 
+
+    static void HiLo(int[] arr){
+        HashMap<Integer, Integer> freq = new HashMap<>();
+        for(int val: arr){
+            freq.put(val, freq.getOrDefault(val,0)+1);
+        }
+        int HighestFreq = Integer.MIN_VALUE;
+        int HighestNum = -1;
+        for(int key : freq.keySet()){
+
+        }
+    }
+
     public static void main(String[] args) {
         int[] arr = {1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,5,5};
         int[] ans = HighestAndLowestFreq(arr);
