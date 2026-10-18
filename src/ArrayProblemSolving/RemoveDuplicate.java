@@ -7,10 +7,7 @@ public class RemoveDuplicate {
         HashMap<Integer, Integer> freq = new HashMap<>();
         for (int val : arr) {
             freq.put(val, freq.getOrDefault(val, 0) + 1);
-
         }
-
-
         return freq.size();
     }
 
