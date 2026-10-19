@@ -25,7 +25,7 @@ public class FindTargetIndices {
         int[] nums = {3,1,2,5,2,3};
         int target =3;
         FindTargetIndices solution = new FindTargetIndices();
-        List<Integer> numbers = solution.targetIndices(nums, target);
-        System.out.println(numbers);
+        List<Integer> list = solution.targetIndices(nums, target);
+        System.out.println(list);
     }
 }
