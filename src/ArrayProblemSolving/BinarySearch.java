@@ -5,8 +5,9 @@ public class BinarySearch {
         int n = arr.length;
         int start = 0;
         int end = n - 1;
-        int mid = (start + end) / 2;    //OR mid = start + (end - start)/2
+
         while (start <= end) {
+        int mid = (start + end) / 2;    //OR mid = start + (end - start)/2
             if (target == arr[mid]) {
                 return mid;
             } else if (target > arr[mid]) {
@@ -14,7 +15,7 @@ public class BinarySearch {
             } else {
                 end = mid - 1;
             }
-            mid = (start + end) / 2;     //OR mid = start + (end - start)/2
+//            mid = (start + end) / 2;     //OR mid = start + (end - start)/2
 
         }
         return -1;
