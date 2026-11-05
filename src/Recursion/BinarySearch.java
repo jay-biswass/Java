@@ -2,6 +2,11 @@ package Recursion;
 
 public class BinarySearch {
     static int solution(int[] arr, int s, int e, int target ){
+
+        if(s>e){
+            return -1;
+        }
+
         int mid = s + (e-s)/2;
         if(arr[mid] == target){
             return mid;
